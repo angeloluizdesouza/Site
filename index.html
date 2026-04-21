@@ -32,6 +32,24 @@
         
         <img src="C:\Users\angel\OneDrive\Documentos\Curso SCTECH\Front-End\img_preventiva.jpg" alt="ImgManutenção Preventiva"
             title="Img Manutenção Preventiva"> 
+        <h5>Itens a verificar</h5>
+        <table>
+            <tr>
+                <th>Equipamento</th>
+                <th>Data da última manutenção</th>
+                <th>Próxima manutenção prevista</th>
+            </tr>
+            <tr>
+                <td>Máquina A</td>
+                <td>01/01/2024</td>
+                <td>01/07/2024</td>
+            </tr>
+            <tr>
+                <td>Máquina B</td>
+                <td>15/02/2024</td>
+                <td>15/08/2024</td>
+            </tr>
+        </table>
     </section>      
 <aside>
     <section id="relatorio-corretiva">
@@ -63,15 +81,30 @@
             <address>
                 <p>Contato: <a href="mailto:angeloluizdesouza@gmail.com">angeloluizdesouza@gmail.com</a></p>
                 <form action="">
-                    <label for="nome">Nome:</label></p>
-                    <input type="text" id="nome" name="nome" required>
-                    <label for="email">Email:</label></p>
-                    <input type="email" id="email" name="email" required>
-                    <label for="telefone">Telefone:</label></p>
-                    <input type="tel" id="telefone" name="telefone" required>
-                    <label  for="mensagem">Mensagem:</label></p>
-                    <textarea id="mensagem" name="mensagem" required></textarea>
-                    <button type="submit">Enviar</button>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required></p>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required></p>
+                    
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required></p>
+
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="dúvida">Dúvida</option>
+                        <option value="sugestão">Sugestão</option>
+                        <option value="reclamação">Reclamação</option>  
+                    </select></p>
+
+                    <label  for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea></p> 
+
+                    <input type="checkbox" id="inscrição" name="inscrição">
+                    <label for="inscrição">Deseja receber novidades por email?</label>
+                    <br>
+                    <input type="submit" value="Enviar mensagem">
                </form>
             </address>
         </footer>
